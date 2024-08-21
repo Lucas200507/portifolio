@@ -2,16 +2,20 @@
  --cor_fundo: black;
  --cor_letra: white;
  --tamanho_letra: 15px;
- --cor_transition: rgba(80, 193, 221, 0.712);
+ --cor_transition1: rgba(80, 193, 221, 0.712);
  --fonte: "Roboto Condensed", sans-serif;
+ --cor_objeto: black;
+ --cor_transition: white;
 }
 
 body{
     padding: 0;
     margin: 0;
+    font-family: var(--fonte);
 }
 
 .menu{
+    position: fixed;
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
@@ -26,7 +30,7 @@ a{
 }
 
 a:hover {
-    color: var(--cor_transition);
+    color: var(--cor_transition1);
 }
 
 .lado_esquerdo ul{
@@ -62,23 +66,44 @@ a:hover {
 }
 
 #icone{
-    margin-bottom: -5px;
-    height: 200px;
+    font-size: 100px;
+    color: var(--cor_objeto);
+    margin-bottom: 10px;
+
+    transition: color 2s;
+}
+
+#icone:hover{
+    color: var(--cor_transition);
+    background-color: rgba(39, 39, 39, 0.473);
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .redes_sociais{
     display: flex;
+    justify-content: center;
     position: absolute;
     top: 415px;
+    margin-top: 21px;
 }
 
-.circle{
-    margin: 7px;
-    height: 50px;
-    width: 50px;
-    background-color: black;
+.icon{
+    background-color: rgba(39, 39, 39, 0.24);
+    color: var(--cor_objeto);
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: -5px;
+    transition: font-size 1s;
+}
 
-    border-radius: 50%;
+.icon:hover{
+    background-color: rgba(39, 39, 39, 0.589);
+    color: var(--cor_transition);
+    font-size: 40px;
+
 }
 
 .apresentacao{
@@ -116,6 +141,5 @@ a:hover {
 }
 
 .topicos{
-    margin: 20.5px;
+    margin: 21.5px;
 }
-
