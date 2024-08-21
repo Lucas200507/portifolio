@@ -111,7 +111,7 @@ a:hover {
     justify-content: center;
     font-family: var(--fonte);  
 }
-.descricao{
+.container_informacoes{
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -130,6 +130,7 @@ a:hover {
 
 .titulo_informacoes{
     text-align: center;
+    margin-bottom: 0;
 }
 
 #topicos{
@@ -142,4 +143,40 @@ a:hover {
 
 .topicos{
     margin: 21.5px;
+}
+
+.container_habilidades{
+   display: flex;
+   justify-content: center;
+}
+
+.habilidades{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: auto;
+    margin-top: 30px;
+
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#tabela1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.skill{
+    display: block;
+    margin: 20px;
+}
+
+.dados{
+    display: inline-flex;
+    justify-content:
+    space-around;
+    width: 100%;
 }
