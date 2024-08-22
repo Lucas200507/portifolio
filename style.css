@@ -181,6 +181,23 @@ a:hover {
     width: 100%;
 }
 
-#fundo_nn{
+.icones{
+    display: flex;
+    justify-content: center;
     
+}
+
+.icon2{
+    background-color: var(--cor_transition1);
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon2:hover{
+    color: var(--cor_transition);
+    background-color: var(--cor_transition1);
+    padding: 10px;
+    border-radius: 50%;
 }
