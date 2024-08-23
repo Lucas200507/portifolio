@@ -281,8 +281,10 @@ a:hover {
     display: flex;
     background-color: aliceblue;
     width: 70%;
+    text-align: center;
     align-items: center;
     justify-content: center;
+    height: auto;
 
     border-left: 0.5px solid black;
 }
