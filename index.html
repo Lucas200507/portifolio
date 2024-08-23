@@ -17,16 +17,16 @@
         <div class="menu">
             <div class="lado_esquerdo">
                 <ul>
-                    <li><a href="#">CURRICULUM</a></li>
+                    <li><a class="navegacao" href="#fundo_menu">CURRICULUM</a></li>
                 </ul>
             </div>
            <div class="lado_direito">
                 <ul>
-                    <li><a href="#">SOBRE</a></li>
-                    <li><a href="#">HABLIDADES</a></li>
-                    <li><a href="#">PORTFÓLIO</a></li>
-                    <li><a href="#">EXPERIÊNCIA</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                    <li><a class="navegacao" href="#sobre">SOBRE</a></li>
+                    <li><a class="navegacao" href="#habilidades">HABLIDADES</a></li>
+                    <li><a class="navegacao"href="#portifolio">PORTFÓLIO</a></li>
+                    <li><a class="navegacao" href="#experiencia">EXPERIÊNCIA</a></li>
+                    <li><a class="navegacao" href="#contato">CONTATO</a></li>
                 </ul>
            </div>
         </div>
@@ -43,10 +43,10 @@
     <!-- //////////////////////////////////////////////////////////////// -->
     <main>
         <!-- ---------------SOBRE--------------- -->
-       <div class="apresentacao">
+       <div id="sobre">
             <div class="container_informacoes">
                 <div class="informacoes">
-                    <h1 class="titulo_informacoes">Sobre</h1>
+                    <h1 class="titulo">Sobre</h1>
                     <p>
                         Hello! I am Bruno A. Dias. Web Developer, Graphic Designer and Photographer and Teacher.
 
@@ -54,7 +54,7 @@
                     </p>
                 </div>
                 <div class="informacoes">
-                    <h1 class="titulo_informacoes">Informações Básicas</h1>
+                    <h1 class="titulo">Informações Básicas</h1>
                         <div id="topicos">
                             <div>
                                 <h4>Idade:</h4>
@@ -75,9 +75,9 @@
             </div>
         </div>
         <!-- ---------------HABILIDADES--------------- -->
-            <h1 class="titulo_informacoes" style="margin-top: 100px;">Habilidades Profissionais</h1>
+            <h1 class="titulo" style="margin-top: 100px;">Habilidades Profissionais</h1>
                 <div class="container_habilidades">
-                    <div class="habilidades">
+                    <div id="habilidades">
                             <div class="lado_direito" style="width: 100%; padding: 10px;">
                                 <div class="dados">
                                     <p class="skill">HTML</p>
@@ -109,18 +109,72 @@
                     </div>
                 </div>
 <!-- ---------------PORTIFÓLIO--------------- -->
-            <h1 class="titulo_informacoes" style="margin-top: 100px;">Portifólio</h1>
-                <div class="portifolio">
+            <h1 class="titulo" style="margin-top: 100px;">Portifólio</h1>
+                <div id="portifolio">
                     <div class="icones">
                         <ion-icon name="laptop" class="icon2"></ion-icon>
                         <ion-icon name="images" class="icon2"></ion-icon>
                         <ion-icon name="camera" class="icon2"></ion-icon>
                     </div>
-
+                            <div class="container_portifolio">
+                                <div class="lado_esquerdo">
+                                    <img class="graphic" src="./img/graphic-design-1.jpg" alt="">
+                                    <img class="graphic" src="./img/photography-1.jpg" alt="">
+                                </div>
+                                <div class="lado_direito">
+                                    <img class="graphic" src="./img/photography-3.jpg" alt="">
+                                    <img class="graphic" src="./img/graphic-design-2.jpg" alt="">
+                                </div>
+                            </div>
                 </div>
+<!-- ---------------EXPERIÊNCIA--------------- -->
+            <h1 class="titulo" style="margin-top: 100px;">Experiência de Trabalho</h1>    
+                <div id="experiencia">
+                    <div class="container_experiencias">
+                        <div class="lado_esquerdo2">
+                            <p>Nenhum</p>
+                        </div>
+                        <div class="lado_direito2">
+                            <p>Estou em busca do meu primeiro emprego.</p>
+                        </div>
+                    </div>
+                </div>
+            <!-- Educação -->
+            <h1 class="titulo" style="margin-top: 100px;">Educação</h1>
+            <div id="experiencia">
+                <div class="container_experiencias">
+                    <div class="lado_esquerdo2">
+                        <p>2024 - Cursando</p>
+                    </div>
+                    <div class="lado_direito2" style="display: block;">
+                        <p>Engenharia de Software</p>
+                        <p>Universidade Católica (Noturno)</p>
+                    </div>
+                </div>
+            </div>
+            <div id="experiencia">
+                <div class="container_experiencias">
+                    <div class="lado_esquerdo2">
+                        <p>Completo - 2023</p>
+                    </div>
+                    <div class="lado_direito2">
+                        <p>Ensino Médio Completo</p>
+                    </div>
+                </div>
+            </div>
+            <div id="experiencia">
+                <div class="container_experiencias">
+                    <div class="lado_esquerdo2">
+                        <p>Nenhum</p>
+                    </div>
+                    <div class="lado_direito2">
+                        <p>Estou em busca do meu primeiro emprego.</p>
+                    </div>
+                </div>
+            </div>
 
 
-        </div>
+            
     </main>
     <!-- //////////////////////////////////////////////////////////////// -->
     <footer></footer>
