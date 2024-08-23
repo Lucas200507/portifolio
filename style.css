@@ -12,6 +12,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: var(--fonte);
+    
 }
 
 .menu{
@@ -33,6 +34,15 @@ a:hover {
     color: var(--cor_transition1);
 }
 
+.navegacao{
+    transition: border 2s;
+    
+}
+
+.navegacao:hover{
+    border-bottom: solid 1px var(--cor_transition1);
+}
+
 .lado_esquerdo ul{
     display: flex;
     margin-left: 5px;
@@ -48,6 +58,8 @@ a:hover {
 .lado_direito ul{
     padding-right: 45px;
 }
+
+/*Menu*/
 
 #fundo_menu{
     margin: 0;
@@ -106,7 +118,9 @@ a:hover {
 
 }
 
-.apresentacao{
+/*Sobre*/
+
+#sobre{
     display: flex;
     justify-content: center;
     font-family: var(--fonte);  
@@ -128,7 +142,7 @@ a:hover {
     width: 300px;
 }
 
-.titulo_informacoes{
+.titulo{
     text-align: center;
     margin-bottom: 0;
 }
@@ -145,12 +159,14 @@ a:hover {
     margin: 21.5px;
 }
 
+/*Habilidades*/
+
 .container_habilidades{
    display: flex;
    justify-content: center;
 }
 
-.habilidades{
+#habilidades{
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -181,10 +197,18 @@ a:hover {
     width: 100%;
 }
 
+/*Portifolio*/
+
+#portifolio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
 .icones{
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .icon2{
@@ -200,4 +224,65 @@ a:hover {
     background-color: var(--cor_transition1);
     padding: 10px;
     border-radius: 50%;
+}
+
+.container_portifolio{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: auto;
+    margin-top: 50px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.graphic{
+    display: block;
+    margin: 30px;
+    width: 320px;
+    height: 260px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.425);
+    transition: all 0.8s;
+}
+
+.graphic:hover{
+    height: 265px;
+    width: 325px;
+}
+
+/*Experiencia*/
+#experiencia{
+    display: flex;
+    justify-content: center;
+}
+
+.container_experiencias{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding: 0;
+    height: 100px;
+
+    margin-top: 30px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.lado_esquerdo2{
+    display: flex;
+    background-color: var(--cor_transition1);
+    color: var(--cor_letra);
+    font-weight: bold; /*Deixar em Negrito*/
+
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.lado_direito2{
+    display: flex;
+    background-color: aliceblue;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 0.5px solid black;
 }
