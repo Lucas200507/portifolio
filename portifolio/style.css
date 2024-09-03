@@ -1,0 +1,351 @@
+.dark {
+    --cor_fundo: rgb(194, 194, 194);
+    --cor_letra_menu: black;
+    --tamanho_letra: 15px;
+    --cor_transition1: rgba(255, 255, 255, 0.712);
+    --fonte: "Roboto Condensed", sans-serif;
+    --cor_objeto: white;
+    --cor_usuario: rgba(153, 146, 146, 0.897);
+    --cor_transition: black;
+    --fundo_menu: url(./img/background_menuDark.webp);
+    --cor_transition_background: rgba(180, 174, 174, 0.473);
+    --fundo_body: rgb(29, 28, 28);
+    --cor_letra: white;
+    --cor_box_shadow: rgba(180, 174, 174, 0.473);
+}
+
+
+:root {
+ --cor_fundo: black;
+ --cor_letra_menu: white;
+ --tamanho_letra: 15px;
+ --cor_transition1: rgba(80, 193, 221, 0.712);
+ --fonte: "Roboto Condensed", sans-serif;
+ --cor_objeto: black;
+ --cor_usuario: rgba(0, 0, 0, 0.897);
+ --cor_transition: white;
+ --fundo_menu: url(./img/background_menu1.jpg);
+ --cor_transition_background: rgba(39, 39, 39, 0.671);
+ --fundo_body: #fff;
+ --cor_letra: black;
+ --cor_box_shadow: rgba(0, 0, 0, 0.3);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte);
+    background-color: var(--fundo_body);
+    
+}
+
+h1{
+    color: var(--cor_letra);
+}
+
+p{
+    color: var(--cor_letra);
+}
+
+.menu{
+    position: fixed;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--cor_fundo);
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor_letra_menu);
+    font-size: var(--tamanho_letra);
+    font-family: var(--fonte);
+}
+
+a:hover {
+    color: var(--cor_transition1);
+}
+
+.navegacao{
+    transition: border 2s;
+    
+}
+
+.navegacao:hover{
+    border-bottom: solid 1px var(--cor_transition1);
+}
+
+.lado_esquerdo ul{
+    display: flex;
+    margin-left: 5px;
+}
+
+.lado_direito li{
+    display: inline;
+    margin: 7px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lado_direito ul{
+    padding-right: 45px;
+}
+
+#nome{
+    color: var(--cor_objeto);
+}
+#icon_tema{
+    width: 64px;
+    postition: relative;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+#icon_tema button{
+    height: 32px;
+    width: 32px;
+    background:0;
+    background-size: 15px;
+    border-radius: 50%;
+    border: none;
+    top: 50%;
+}
+
+/*Menu*/
+
+#fundo_menu{
+    margin: 0;
+    height: 400px;
+    background: var(--fundo_menu);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor_letra_menu);
+    font-family: var(--fonte);
+    font-size: 25px;
+}
+
+#icone{
+    font-size: 100px;
+    color: var(--cor_usuario);
+    margin-bottom: 10px;
+
+    transition: color 2s;
+}
+
+#icone:hover{
+    color: var(--cor_transition);
+    background-color: var(--cor_transition_background);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.redes_sociais{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    margin-top: 0px;
+}
+
+.icon{
+    background-color: rgba(39, 39, 39, 0.24);
+    color: var(--cor_objeto);
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: -5px;
+    transition: font-size 1s;
+}
+
+.icon:hover{
+    background-color: var(--cor_transition_background);
+    color: var(--cor_transition);
+    font-size: 40px;
+
+}
+
+/*Sobre*/
+
+#sobre{
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte);
+    color: var(--cor_letra);
+}
+.container_informacoes{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: auto;
+    margin-top: 50px;
+
+    box-shadow: 4px 4px 8px var(--cor_box_shadow);
+
+}
+
+.informacoes{
+    margin: 20px;
+    width: 300px;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#topicos{
+    display: flex;
+    direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.topicos{
+    margin: 21.5px;
+}
+
+/*Habilidades*/
+
+.container_habilidades{
+   display: flex;
+   justify-content: center;
+}
+
+#habilidades{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: auto;
+    margin-top: 30px;
+
+    box-shadow: 4px 4px 8px var(--cor_box_shadow);
+}
+
+#tabela1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.skill{
+    display: block;
+    margin: 20px;
+}
+
+.dados{
+    display: inline-flex;
+    justify-content:
+    space-around;
+    width: 100%;
+}
+
+/*Portifolio*/
+
+#portifolio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.icones{
+    display: flex;
+    justify-content: center;    
+}
+
+.icon2{
+    background-color: var(--cor_transition1);
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.icon2:hover{
+    color: var(--cor_objeto);
+    background-color: var(--cor_transition_background);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.container_portifolio{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: auto;
+    margin-top: 50px;
+    box-shadow: 4px 4px 8px var(--cor_box_shadow);
+}
+
+.graphic{
+    display: block;
+    margin: 30px;
+    width: 320px;
+    height: 260px;
+    box-shadow: 4px 4px 8px var(--cor_box_shadow);
+    transition: all 0.8s;
+}
+
+.graphic:hover{
+    height: 265px;
+    width: 325px;
+}
+
+/*Experiencia*/
+#experiencia{
+    display: flex;
+    justify-content: center;
+}
+
+#experiencia p{
+    color: black;
+}
+
+
+.container_experiencias{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    padding: 0;
+    height: 100px;
+
+    margin-top: 30px;
+    box-shadow: 4px 4px 8px var(--cor_box_shadow);
+}
+
+.lado_esquerdo2{
+    display: flex;
+    background-color: var(--cor_transition1);
+    font-weight: bold; /*Deixar em Negrito*/
+
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.lado_direito2{
+    display: flex;
+    background-color: aliceblue;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+
+    border-left: 0.5px solid black;
+}
+
+

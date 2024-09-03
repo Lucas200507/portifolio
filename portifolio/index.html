@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="dar">
+    <!-- //////////////////////////////////////////////////////////////// -->
+    <header>
+        <!-- ---------------MENU--------------- -->
+        <div class="menu">
+            <div class="lado_esquerdo">
+                <ul>
+                    <li style="list-style: none;"><a class="navegacao" href="#fundo_menu">CURRICULUM</a></li>
+                </ul>
+            </div>
+           <div class="lado_direito">
+                <ul>
+                    <li><a class="navegacao" href="#sobre">SOBRE</a></li>
+                    <li><a class="navegacao" href="#habilidades">HABLIDADES</a></li>
+                    <li><a class="navegacao"href="#portifolio">PORTFÓLIO</a></li>
+                    <li><a class="navegacao" href="#experiencia">EXPERIÊNCIA</a></li>
+                    <li><a class="navegacao" href="#contato">CONTATO</a></li>
+                </ul>
+           </div>
+        </div>
+            <div id="fundo_menu">
+                <ion-icon name="contact" id="icone"></ion-icon>
+                <a href="#" id="nome">Lucas Ataide Martins</a>
+                    <div class="redes_sociais">
+                        <ion-icon name="logo-instagram" class="icon"></ion-icon>
+                        <ion-icon name="logo-github" class="icon"></ion-icon>
+                        <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+                    </div>
+            </div>
+            <div id="icon_tema" onclick="Mudar_tema()">
+                <button></button>
+                <span></span>
+            </div>
+    </header>
+    <!-- //////////////////////////////////////////////////////////////// -->
+    <main>
+        <!-- ---------------SOBRE--------------- -->
+       <div id="sobre">
+            <div class="container_informacoes">
+                <div class="informacoes">
+                    <h1 class="titulo">Sobre</h1>
+                    <p>
+                        Hello! I am Bruno A. Dias. Web Developer, Graphic Designer and Photographer and Teacher.
+
+                        Curriculum Vitae is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience.
+                    </p>
+                </div>
+                <div class="informacoes">
+                    <h1 class="titulo">Informações Básicas</h1>
+                        <div id="topicos">
+                            <div>
+                                <h4>Idade:</h4>
+                                <h4>E-mail:</h4>
+                                <h4>Fone:</h4>
+                                <h4>Indereço:</h4>
+                                <h4>Línguas:</h4>
+                            </div>
+                            <div>
+                                <p class="topicos">19 anos</p>
+                                <p class="topicos">lucasataidem1207@gmail.com</p>
+                                <p class="topicos">(61) 99658-9491</p>
+                                <p class="topicos">Rua 3C CH30</p>
+                                <p class="topicos">Portugês, Espanhol</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------HABILIDADES--------------- -->
+            <h1 class="titulo" style="margin-top: 100px;">Habilidades Profissionais</h1>
+                <div class="container_habilidades">
+                    <div id="habilidades">
+                            <div class="lado_direito" style="width: 100%; padding: 10px;">
+                                <div class="dados">
+                                    <p class="skill">HTML</p>
+                                    <p>80%</p>
+                                </div>
+                                <div class="dados">
+                                    <p class="skill">CSS</p>
+                                    <p>75%</p>
+                                </div>
+                                <div class="dados">
+                                    <p class="skill">Javascript</p>
+                                     <p>60%</p>
+                                </div>
+                            </div>
+                            <div class="lado_esquerdo" style="width: 100%; padding: 10px;">
+                                <div class="dados">
+                                    <p class="skill">Kass</p>
+                                    <p>0%</p>
+                                </div>
+                                <div class="dados">
+                                    <p class="skill">Photoshop</p>
+                                    <p>30%</p>
+                                </div>
+                                <div class="dados">
+                                    <p class="skill">Bootstrap</p>
+                                    <p>0%</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+<!-- ---------------PORTIFÓLIO--------------- -->
+            <h1 class="titulo" style="margin-top: 100px;">Portifólio</h1>
+                <div id="portifolio">
+                    <div class="icones">
+                        <ion-icon name="laptop" class="icon2"></ion-icon>
+                        <ion-icon name="images" class="icon2"></ion-icon>
+                        <ion-icon name="camera" class="icon2"></ion-icon>
+                    </div>
+                            <div class="container_portifolio">
+                                <div class="lado_esquerdo">
+                                    <img class="graphic" src="./img/graphic-design-1.jpg" alt="">
+                                    <img class="graphic" src="./img/photography-1.jpg" alt="">
+                                </div>
+                                <div class="lado_direito">
+                                    <img class="graphic" src="./img/photography-3.jpg" alt="">
+                                    <img class="graphic" src="./img/graphic-design-2.jpg" alt="">
+                                </div>
+                            </div>
+                </div>
+<!-- ---------------EXPERIÊNCIA--------------- -->
+            <h1 class="titulo" style="margin-top: 100px;">Experiência de Trabalho</h1>    
+                <div id="experiencia">
+                    <div class="container_experiencias">
+                        <div class="lado_esquerdo2">
+                            <p>Nenhum</p>
+                        </div>
+                        <div class="lado_direito2">
+                            <p>Estou em busca do meu primeiro emprego.</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Educação -->
+            <h1 class="titulo" style="margin-top: 100px;">Educação</h1>
+            <div id="experiencia">
+                <div class="container_experiencias">
+                    <div class="lado_esquerdo2">
+                        <p>2024 - Cursando</p>
+                    </div>
+                    <div class="lado_direito2" style="display: block;">
+                        <p>Engenharia de Software</p>
+                        <p>Universidade Católica (Noturno)</p>
+                    </div>
+                </div>
+            </div>
+            <div id="experiencia">
+                <div class="container_experiencias">
+                    <div class="lado_esquerdo2">
+                        <p>Completo - 2023</p>
+                    </div>
+                    <div class="lado_direito2">
+                        <p>Ensino Médio Completo</p>
+                    </div>
+                </div>
+            </div>
+            <div id="experiencia">
+                <div class="container_experiencias">
+                    <div class="lado_esquerdo2">
+                        <p>2024 - Cursando</p>
+                    </div>
+                    <div class="lado_direito2">
+                        <p>Curso Técnico em Desenvolvimento de Sistemas.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="experiencia">
+                <div class="container_experiencias">
+                    <div class="lado_esquerdo2">
+                        <p>Nenhum</p>
+                    </div>
+                    <div class="lado_direito2">
+                        <p>Estou em busca do meu primeiro emprego.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            
+    </main>
+    <!-- //////////////////////////////////////////////////////////////// -->
+    <footer></footer>
+
+
+
+
+    <script  src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
