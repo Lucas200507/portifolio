@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="portifolio.js" defer></script>
 </head>
 <body class="dar">
     <!-- //////////////////////////////////////////////////////////////// -->
@@ -28,6 +29,11 @@
                     <li><a class="navegacao" href="#experiencia">EXPERIÊNCIA</a></li>
                     <li><a class="navegacao" href="#contato">CONTATO</a></li>
                 </ul>
+                <div class="container_tema">
+                    <div class="tema">
+                        <button id="botao_tema"></button>
+                    </div>
+                </div>
            </div>
         </div>
             <div id="fundo_menu">
@@ -38,10 +44,6 @@
                         <ion-icon name="logo-github" class="icon"></ion-icon>
                         <ion-icon name="logo-linkedin" class="icon"></ion-icon>
                     </div>
-            </div>
-            <div id="icon_tema" onclick="Mudar_tema()">
-                <button></button>
-                <span></span>
             </div>
     </header>
     <!-- //////////////////////////////////////////////////////////////// -->
@@ -116,18 +118,18 @@
             <h1 class="titulo" style="margin-top: 100px;">Portifólio</h1>
                 <div id="portifolio">
                     <div class="icones">
-                        <ion-icon name="laptop" class="icon2"></ion-icon>
-                        <ion-icon name="images" class="icon2"></ion-icon>
-                        <ion-icon name="camera" class="icon2"></ion-icon>
+                        <ion-icon name="laptop" class="icon2" onclick="laptop()"></ion-icon>
+                        <ion-icon name="images" class="icon2" onclick="galeria()"></ion-icon>
+                        <ion-icon name="camera" class="icon2" onclick="camera()"></ion-icon>
                     </div>
                             <div class="container_portifolio">
                                 <div class="lado_esquerdo">
-                                    <img class="graphic" src="./img/graphic-design-1.jpg" alt="">
-                                    <img class="graphic" src="./img/photography-1.jpg" alt="">
+                                    <span class="graphic" id="img1"></span>
+                                    <span class="graphic" id="img2"></span>
                                 </div>
                                 <div class="lado_direito">
-                                    <img class="graphic" src="./img/photography-3.jpg" alt="">
-                                    <img class="graphic" src="./img/graphic-design-2.jpg" alt="">
+                                    <span class="graphic" id="img3"></span>
+                                    <span class="graphic" id="img4"></span>
                                 </div>
                             </div>
                 </div>
