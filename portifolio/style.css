@@ -1,20 +1,3 @@
-.dark {
-    --cor_fundo: rgb(194, 194, 194);
-    --cor_letra_menu: black;
-    --tamanho_letra: 15px;
-    --cor_transition1: rgba(255, 255, 255, 0.712);
-    --fonte: "Roboto Condensed", sans-serif;
-    --cor_objeto: white;
-    --cor_usuario: rgba(153, 146, 146, 0.897);
-    --cor_transition: black;
-    --fundo_menu: url(./img/background_menuDark.webp);
-    --cor_transition_background: rgba(180, 174, 174, 0.473);
-    --fundo_body: rgb(29, 28, 28);
-    --cor_letra: white;
-    --cor_box_shadow: rgba(180, 174, 174, 0.473);
-}
-
-
 :root {
  --cor_fundo: black;
  --cor_letra_menu: white;
@@ -29,6 +12,26 @@
  --fundo_body: #fff;
  --cor_letra: black;
  --cor_box_shadow: rgba(0, 0, 0, 0.3);
+ --posicao_do_botao: start;
+ --imagem_do_botao: url(./img/brilho-do-sol.png);
+}
+
+.dark {
+    --cor_fundo: rgb(194, 194, 194);
+    --cor_letra_menu: black;
+    --tamanho_letra: 15px;
+    --cor_transition1: rgba(255, 255, 255, 0.712);
+    --fonte: "Roboto Condensed", sans-serif;
+    --cor_objeto: white;
+    --cor_usuario: rgba(153, 146, 146, 0.897);
+    --cor_transition: black;
+    --fundo_menu: url(./img/background_menuDark.webp);
+    --cor_transition_background: rgba(180, 174, 174, 0.473);
+    --fundo_body: rgb(29, 28, 28);
+    --cor_letra: white;
+    --cor_box_shadow: rgba(180, 174, 174, 0.473);
+    --posicao_do_botao: end;
+    --imagem_do_botao: url(./img/Lua.png);
 }
 
 body{
@@ -75,9 +78,22 @@ a:hover {
     border-bottom: solid 1px var(--cor_transition1);
 }
 
+
+/*LADO ESQUERDO*/
+.lado_esquerdo{
+    display: flex;
+}
+
 .lado_esquerdo ul{
     display: flex;
-    margin-left: 5px;
+    align-items: center;
+    
+}
+
+/*LADO DIREITO*/
+
+.lado_direito{
+    display: flex;
 }
 
 .lado_direito li{
@@ -88,15 +104,54 @@ a:hover {
 }
 
 .lado_direito ul{
-    padding-right: 45px;
+    display: flex;
 }
+
+.container_tema{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    
+}
+
+.tema{
+    display: flex;
+    align-items: center;
+    justify-content: var(--posicao_do_botao);
+    width: 60px;
+    height: 31px;
+    background-color: rgb(87, 87, 90);
+    z-index: 2;
+    position: relative;
+      border-radius: 30px;
+      
+}
+
+#botao_tema{
+    display: block;
+    height: 36px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+     background: white var(--imagem_do_botao);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 20px;
+     border: none;
+       border-radius: 50%;
+}
+
+
+/*MENU INFERIOR*/
 
 #nome{
     color: var(--cor_objeto);
 }
 #icon_tema{
     width: 64px;
-    postition: relative;
+    position: relative;
     padding-bottom: 20px;
     margin: 0 auto;
 }
@@ -259,9 +314,10 @@ a:hover {
     align-items: center;
 }
 
+ /*ICONES*/
 .icones{
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .icon2{
@@ -273,15 +329,18 @@ a:hover {
 }
 
 .icon2:hover{
-    color: var(--cor_objeto);
+    color: var(--cor_transition);
     background-color: var(--cor_transition_background);
     padding: 10px;
     border-radius: 50%;
 }
 
+/*IMAGENS*/
+
 .container_portifolio{
     width: auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     padding: auto;
     margin-top: 50px;
@@ -294,7 +353,12 @@ a:hover {
     width: 320px;
     height: 260px;
     box-shadow: 4px 4px 8px var(--cor_box_shadow);
-    transition: all 0.8s;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: all 1s;
+    
 }
 
 .graphic:hover{
