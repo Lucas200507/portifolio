@@ -3,20 +3,24 @@
  --cor_letra_menu: white;
  --tamanho_letra: 15px;
  --cor_transition1: rgba(80, 193, 221, 0.712);
+ --cor-ladoE2: rgb(24, 193, 235);
  --fonte: "Roboto Condensed", sans-serif;
  --cor_objeto: black;
  --cor_usuario: rgba(0, 0, 0, 0.897);
  --cor_transition: white;
- --fundo_menu: url(./img/background_menu1.jpg);
+ --fundo-tela: url(./img/background_menu1.jpg);
  --cor_transition_background: rgba(39, 39, 39, 0.671);
- --fundo_body: #fff;
+ --fundo-container: #ffffff;
  --cor_letra: black;
  --cor_box_shadow: rgba(0, 0, 0, 0.3);
  --posicao_do_botao: start;
  --imagem_do_botao: url(./img/brilho-do-sol.png);
+ --fundo_rodape: rgb(21, 25, 46);
+ --logo: url(./img/icon-miranha.webp);
 }
 
 .dark {
+    --cor-ladoE2: rgb(103, 106, 107);
     --cor_fundo: rgb(194, 194, 194);
     --cor_letra_menu: black;
     --tamanho_letra: 15px;
@@ -25,20 +29,26 @@
     --cor_objeto: white;
     --cor_usuario: rgba(153, 146, 146, 0.897);
     --cor_transition: black;
-    --fundo_menu: url(./img/background_menuDark.webp);
+    --fundo-tela: url(./img/background_menuDark.webp);
     --cor_transition_background: rgba(180, 174, 174, 0.473);
-    --fundo_body: rgb(29, 28, 28);
+    --fundo-container: rgb(29, 28, 28);
     --cor_letra: white;
     --cor_box_shadow: rgba(180, 174, 174, 0.473);
     --posicao_do_botao: end;
     --imagem_do_botao: url(./img/Lua.png);
+    --fundo_rodape: rgb(25, 25, 26);
+    --logo: url(./img/icon-miranha_preto.png);
 }
 
 body{
     padding: 0;
     margin: 0;
-    font-family: var(--fonte);
-    background-color: var(--fundo_body);
+    font-family: var(--fonte);    
+    overflow-x: hidden;
+    background: var(--fundo-tela);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;      
     
 }
 
@@ -56,6 +66,7 @@ p{
     justify-content: space-between;
     width: 100%;
     background-color: var(--cor_fundo);
+    z-index: 1;
 }
 
 a{
@@ -69,15 +80,19 @@ a:hover {
     color: var(--cor_transition1);
 }
 
+/* ------------------------------------------------------*/
+
+/* NAVEGACAO */
+
 .navegacao{
     transition: border 2s;
+    
     
 }
 
 .navegacao:hover{
     border-bottom: solid 1px var(--cor_transition1);
 }
-
 
 /*LADO ESQUERDO*/
 .lado_esquerdo{
@@ -144,67 +159,57 @@ a:hover {
 }
 
 
+/* ------------------------------------------------------*/
+
 /*MENU INFERIOR*/
-
-#nome{
-    color: var(--cor_objeto);
-}
-#icon_tema{
-    width: 64px;
-    position: relative;
-    padding-bottom: 20px;
-    margin: 0 auto;
-}
-
-#icon_tema button{
-    height: 32px;
-    width: 32px;
-    background:0;
-    background-size: 15px;
-    border-radius: 50%;
-    border: none;
-    top: 50%;
-}
-
-/*Menu*/
 
 #fundo_menu{
     margin: 0;
-    height: 400px;
-    background: var(--fundo_menu);
-    background-size: cover;
-    background-repeat: no-repeat;
-
+    width: 100%;
+    height: 60vh;  
+    
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
     color: var(--cor_letra_menu);
     font-family: var(--fonte);
     font-size: 25px;
 }
 
-#icone{
-    font-size: 100px;
-    color: var(--cor_usuario);
-    margin-bottom: 10px;
+.conteudo_menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;   
+    justify-content: space-evenly;
 
-    transition: color 2s;
 }
 
-#icone:hover{
-    color: var(--cor_transition);
-    background-color: var(--cor_transition_background);
-    padding: 10px;
+#logo-menu{
+    background: var(--logo);
     border-radius: 50%;
+    height: 27vh;
+    width: 27vh;
+    background-size: 11em;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+#nome{
+    color: var(--cor_objeto);
+    margin-top: 1em;
+    font-size: 25px;
+    font-weight: bold;    
+    font-style: italic;
+    letter-spacing: 1px;
 }
 
 .redes_sociais{
     display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 300px;
-    margin-top: 0px;
+    justify-content: center;    
+    margin-top: 1em;
+    
 }
 
 .icon{
@@ -225,13 +230,23 @@ a:hover {
 
 }
 
+/*///////////////////////////////////*/
+                /*  main*/  
+
+main {
+    background-color: var(--fundo-container);
+    padding: 5em 0em;
+}   
+
+/* ------------------------------------------------------*/
+
 /*Sobre*/
 
 #sobre{
     display: flex;
     justify-content: center;
     font-family: var(--fonte);
-    color: var(--cor_letra);
+    color: var(--cor_letra);    
 }
 .container_informacoes{
     width: 60%;
@@ -246,8 +261,15 @@ a:hover {
 }
 
 .informacoes{
+    padding: 20px;
     margin: 20px;
-    width: 300px;
+    width: 40%;
+}
+
+.informacoes2{
+    padding: 20px;
+    margin: 20px;
+    width: 60%;
 }
 
 .titulo{
@@ -266,6 +288,8 @@ a:hover {
 .topicos{
     margin: 21.5px;
 }
+
+/* ------------------------------------------------------*/
 
 /*Habilidades*/
 
@@ -305,6 +329,8 @@ a:hover {
     width: 100%;
 }
 
+/* ------------------------------------------------------*/
+
 /*Portifolio*/
 
 #portifolio{
@@ -335,6 +361,8 @@ a:hover {
     border-radius: 50%;
 }
 
+/* ------------------------------------------------------*/
+
 /*IMAGENS*/
 
 .container_portifolio{
@@ -345,6 +373,11 @@ a:hover {
     padding: auto;
     margin-top: 50px;
     box-shadow: 4px 4px 8px var(--cor_box_shadow);
+}
+
+.port{
+    display: flex;
+    flex-direction: row;
 }
 
 .graphic{
@@ -366,7 +399,17 @@ a:hover {
     width: 325px;
 }
 
+/* ------------------------------------------------------*/
+
 /*Experiencia*/
+
+#titulo-exp{
+    color: white;
+    text-align: center;
+    text-shadow: #000000 0 2px;
+
+}
+
 #experiencia{
     display: flex;
     justify-content: center;
@@ -385,12 +428,12 @@ a:hover {
     height: 100px;
 
     margin-top: 30px;
-    box-shadow: 4px 4px 8px var(--cor_box_shadow);
+    box-shadow: 6px 6px 10px var(--cor_box_shadow);
 }
 
 .lado_esquerdo2{
     display: flex;
-    background-color: var(--cor_transition1);
+    background-color: var(--cor-ladoE2);
     font-weight: bold; /*Deixar em Negrito*/
 
     width: 30%;
@@ -412,4 +455,208 @@ a:hover {
     border-left: 0.5px solid black;
 }
 
+/* ------------------------------------------------------*/
 
+/*RODAPÉ*/
+footer {
+    background-color: var(--fundo_rodape);
+    bottom: 0;    
+    margin-top: 8vh;
+    display: flex;
+    margin-bottom: 0;  
+    padding: 5em; 
+    justify-content: center;       
+}
+
+.container_rodape{
+    display: flex;
+    height: 25vh;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#logo-rodape {
+    background: var(--logo);
+    border-radius: 50%;
+    height: 27vh;
+    width: 27vh;
+    background-size: 18em;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.rodape2{
+    display: flex;
+    flex-direction: column;    
+    width: 10%;
+}
+
+.rodape2 h1, p{
+    color: white;
+    text-align: center;
+}
+
+.contato-rodape{
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-contato_rodape{
+    font-size: 40px;
+    color: rgba(160, 150, 150, 0.603);
+    margin-right: 0.2em;
+}
+
+/* ------------------------------------------------------*/
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 490px){  
+   .menu ul li a{
+    font-size: 11px;
+    padding: 0;
+   }
+   
+    .lado_direito ul li{
+    margin: 3px; 
+     
+   }
+   .lado_esquerdo {
+    width: 10%;    
+   }
+
+
+   .tema {
+    width: 50px;
+    height: 26px;
+   }
+
+   #botao_tema{
+    height: 26px;
+    width: 25px;
+    background-size: 10px;
+   }
+
+   .container_informacoes{
+    width: 100%;
+    padding: 2px;
+    font-size: 13px;
+   }
+
+   .informacoes2{
+    width: 45%;
+   }
+
+   #habilidades{        
+    width: 100%;
+    font-size: 13px;   
+    }
+
+.port{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_experiencias{
+    width: 90%;
+}
+
+footer{
+    padding: 5em 1em;    
+}
+
+.container_rodape{
+    width: 100%;
+}
+
+ 
+.rodape2{
+    width: 45%;
+}
+
+#logo-rodape{
+    background: var(--logo);
+    border-radius: 50%;
+    height: 24vh;
+    width: 24vh;
+    background-size: 15em;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+}
+
+@media (min-width: 600px) { 
+    .menu ul li a{
+        font-size: 16px;        
+       }
+       
+        .lado_direito ul li{
+        margin: 7px; 
+         
+       }
+       .lado_esquerdo {
+        width: 10%;    
+       }
+    
+    
+       .tema {
+        width: 60px;
+        height: 31px;
+       }
+    
+       #botao_tema{
+        height: 36px;
+        width: 35px;
+        background-size: 20px;
+       }
+
+       .container_informacoes{
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+       }
+
+       #habilidades{        
+        width: 90%;
+        font-size: 18px;
+       }
+
+       .port{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container_experiencias{
+            width: 60%;
+        }
+
+        footer{
+            padding: 5em 1em;            
+        }
+
+        .container_rodape{
+            width: 100%;
+        }
+
+
+  }
+
+
+  @media (min-width: 1000px){
+    footer{        
+        padding: 5em 10em;        
+    }
+
+    .contato-rodape{
+        width: 60%;
+    }
+
+    .rodape2{
+        width: 30%;
+    }
+  }
+ 
