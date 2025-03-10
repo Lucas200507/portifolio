@@ -37,13 +37,15 @@
            </div>
         </div>
             <div id="fundo_menu">
-                <ion-icon name="contact" id="icone"></ion-icon>
-                <a href="#" id="nome">Lucas Ataide Martins</a>
-                    <div class="redes_sociais">
-                        <ion-icon name="logo-instagram" class="icon"></ion-icon>
-                        <ion-icon name="logo-github" class="icon"></ion-icon>
-                        <ion-icon name="logo-linkedin" class="icon"></ion-icon>
-                    </div>
+                <div class="conteudo_menu">
+                    <span id="logo-menu"></span>
+                    <a href="#" id="nome">Lucas Ataide Martins</a>
+                        <div class="redes_sociais">
+                            <ion-icon name="logo-instagram" class="icon"></ion-icon>
+                            <ion-icon name="logo-github" class="icon"></ion-icon>
+                            <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+                        </div>
+                </div>                
             </div>
     </header>
     <!-- //////////////////////////////////////////////////////////////// -->
@@ -59,7 +61,7 @@
                         Curriculum Vitae is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skills and experience.
                     </p>
                 </div>
-                <div class="informacoes">
+                <div class="informacoes2">
                     <h1 class="titulo">Informações Básicas</h1>
                         <div id="topicos">
                             <div>
@@ -74,7 +76,7 @@
                                 <p class="topicos">lucasataidem1207@gmail.com</p>
                                 <p class="topicos">(61) 99658-9491</p>
                                 <p class="topicos">Rua 3C CH30</p>
-                                <p class="topicos">Portugês, Espanhol</p>
+                                <p class="topicos">Português, Espanhol</p>
                             </div>
                         </div>
                 </div>
@@ -84,7 +86,7 @@
             <h1 class="titulo" style="margin-top: 100px;">Habilidades Profissionais</h1>
                 <div class="container_habilidades">
                     <div id="habilidades">
-                            <div class="lado_direito" style="width: 100%; padding: 10px;">
+                            <div class="lado_direito_habilidades" style="width: 100%; padding: 10px;">
                                 <div class="dados">
                                     <p class="skill">HTML</p>
                                     <p>80%</p>
@@ -98,7 +100,7 @@
                                      <p>60%</p>
                                 </div>
                             </div>
-                            <div class="lado_esquerdo" style="width: 100%; padding: 10px;">
+                            <div class="lado_esquerdo_habilidades" style="width: 100%; padding: 10px;">
                                 <div class="dados">
                                     <p class="skill">Kass</p>
                                     <p>0%</p>
@@ -123,18 +125,20 @@
                         <ion-icon name="camera" class="icon2" onclick="camera()"></ion-icon>
                     </div>
                             <div class="container_portifolio">
-                                <div class="lado_esquerdo">
+                                <div class="port">
                                     <span class="graphic" id="img1"></span>
                                     <span class="graphic" id="img2"></span>
                                 </div>
-                                <div class="lado_direito">
+                                <div class="port">
                                     <span class="graphic" id="img3"></span>
                                     <span class="graphic" id="img4"></span>
                                 </div>
                             </div>
-                </div>
-<!-- ---------------EXPERIÊNCIA--------------- -->
-            <h1 class="titulo" style="margin-top: 100px;">Experiência de Trabalho</h1>    
+                        </div>
+    </main>
+                    <!-- ---------------EXPERIÊNCIA--------------- -->
+        <span class="container-exp">
+            <h1 id="titulo-exp" style="margin-top: 100px;">Experiência de Trabalho</h1>    
                 <div id="experiencia">
                     <div class="container_experiencias">
                         <div class="lado_esquerdo2">
@@ -147,7 +151,7 @@
                 </div>
 
             <!-- Educação -->
-            <h1 class="titulo" style="margin-top: 100px;">Educação</h1>
+            <h1 id="titulo-exp" style="margin-top: 100px;">Educação</h1>
             <div id="experiencia">
                 <div class="container_experiencias">
                     <div class="lado_esquerdo2">
@@ -189,12 +193,31 @@
                     </div>
                 </div>
             </div>
+        </span>                     
 
-
-            
-    </main>
     <!-- //////////////////////////////////////////////////////////////// -->
-    <footer></footer>
+    <footer>
+        <div class="container_rodape">
+            <div class="rodape1">
+                 <div id="logo-rodape"> </div>
+            </div>
+            <div class="rodape2">
+                 <h1>Contato</h1>
+                    <div class="contato-rodape">
+                        <ion-icon name="logo-instagram" class="icon-contato_rodape"></ion-icon>
+                        <p>lucas_.ide</p>
+                    </div>
+                    <div class="contato-rodape">
+                        <ion-icon name="call" class="icon-contato_rodape"></ion-icon>
+                        <p>(61) 99658 - 9491</p>
+                    </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
 
 
 
