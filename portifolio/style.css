@@ -52,13 +52,14 @@ body{
     
 }
 
+body p {
+    color: var(--cor_letra);
+}
+
 h1{
     color: var(--cor_letra);
 }
 
-p{
-    color: var(--cor_letra);
-}
 
 .menu{
     position: fixed;
@@ -492,7 +493,12 @@ footer {
     width: 10%;
 }
 
-.rodape2 h1, p{
+.rodape2 h1{
+    color: white;
+    text-align: center;
+}
+
+.contato-rodape p{
     color: white;
     text-align: center;
 }
@@ -501,7 +507,7 @@ footer {
     text-align: start;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center;    
 }
 
 .icon-contato_rodape{
